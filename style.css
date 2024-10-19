@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: rgb(216, 216, 216);
+}
+
+#main-div{
+    width: 75%;
+    margin: 10px auto;
+}
+body{
+    background-color: grey;
+}
+
+#sobre-mim{
+    background-color: rgb(42, 42, 42);
+    line-height: 20px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+#foto{
+    display: inline;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 75px;
+}
+
+#info{
+    padding: 20px;
+    margin: auto 60px;
+}
+
+#info h1{
+    line-height: 30px;
+    color: orange;
+    font-size: 30px;
+}
+
+#info h2{
+    color: rgb(222, 222, 222);
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 5px;
+}
+
+#info p{
+    font-size: 18px;
+    max-width: 80%;
+}
+
+#monitor-de-precos{
+    background-color: rgb(42, 42, 42);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+#informacoes-monitor{
+    max-width: 50%;
+    margin: auto;
+}
+
+#informacoes-monitor h3{
+    color: orange;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#informacoes-monitor p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#informacoes-monitor a{
+    color: orange
+}
+
+#ul-contatos{
+    list-style: none;
+}
+
+.item-contato a button{
+    color: black;
+    background-color: orange;
+    font-weight: 600;
+    padding: 20px;
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+#contato{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    padding: 30px;
+}
+
+#informacoes-contato{
+    max-width: 30%;
+    margin: auto 0;
+    margin-right: 10px;
+}
+
+#informacoes-contato p, span{
+    font-size: 18px;
+}
+
+span{
+    color: orange;
+}
+
+#informacoes-contato h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
