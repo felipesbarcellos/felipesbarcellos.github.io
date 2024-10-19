@@ -7,7 +7,7 @@
 }
 
 #main-div{
-    width: 70%;
+    width: 90%;
     margin: 10px auto;
 }
 body{
@@ -48,7 +48,8 @@ body{
     padding: 20px;
     margin: auto 60px;
     @media (orientation: portrait) {
-        padding: 5px;
+        padding: 0px;
+        padding-bottom: 30px;
     }
 }
 
@@ -56,6 +57,9 @@ body{
     line-height: 40px;
     color: orange;
     font-size: 30px;
+    @media (max-width: 1200px), (orientation:portrait) {
+        font-size: 28px;
+    }
 }
 
 #info h2{
@@ -63,11 +67,18 @@ body{
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 5px;
+    @media (max-width: 1200px), (orientation:portrait) {
+        font-size: 18px;
+    }
 }
 
 #info p{
     font-size: 18px;
     max-width: 80%;
+    @media (max-width: 1200px), (orientation:portrait) {
+        max-width: 100%;
+        font-size: 16px;
+    }
 }
 
 #monitor-de-precos{
@@ -112,37 +123,62 @@ body{
 
 #ul-contatos{
     list-style: none;
+    max-width: 100%;
+    
     @media (max-width: 1200px), (orientation:portrait) {
-        margin-top: 50px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
     }
+    
 }
 
 .item-contato a button{
     color: black;
     background-color: orange;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
     padding: 20px;
     width: 150px;
-    margin-bottom: 20px;
+    margin: 10px 0;
     border-radius: 20px;
+    @media (max-width: 1200px), (orientation:portrait) {
+        width: 160px;
+        font-size: 16px;
+    }
+    @media (max-width: 650px), (orientation:portrait) {
+        width: 80px;
+        font-size: 12px;
+    }
 }
 
 #contato{
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-evenly;
     background-color: black;
+    max-width: 100%;
     padding: 30px;
+    @media (orientation: portrait), (max-width: 1200px) {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 #informacoes-contato{
-    max-width: 40%;
+    width: 50%;
     margin: auto 0;
-    margin-right: 10px;
+    max-width: 100%;
+    @media (orientation: portrait), (max-width: 1200px) {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 #informacoes-contato p, span{
     font-size: 18px;
+    max-width: 100%;
 }
 
 span{
