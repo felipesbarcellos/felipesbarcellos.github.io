@@ -7,7 +7,7 @@
 }
 
 #main-div{
-    width: 75%;
+    width: 70%;
     margin: 10px auto;
 }
 body{
@@ -17,29 +17,43 @@ body{
 #sobre-mim{
     background-color: rgb(42, 42, 42);
     line-height: 20px;
-    width: fit-content;
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    @media (orientation: portrait),(max-width:1200px) {
+        display: block;
+        padding: 0;
+    }
+    
+}
+
+#foto-perfil{
+    display: flex;
 }
 
 #foto{
-    display: inline;
-    position: relative;
     width: 250px;
     height: 250px;
     overflow: hidden;
     border-radius: 50%;
     margin-left: 75px;
+    @media (orientation: portrait), (max-width: 1200px){
+        margin: 10px auto;
+        width: 200px;
+        height: 200px;
+    }
 }
 
 #info{
     padding: 20px;
     margin: auto 60px;
+    @media (orientation: portrait) {
+        padding: 5px;
+    }
 }
 
 #info h1{
-    line-height: 30px;
+    line-height: 40px;
     color: orange;
     font-size: 30px;
 }
@@ -47,7 +61,7 @@ body{
 #info h2{
     color: rgb(222, 222, 222);
     font-size: 20px;
-    line-height: 35px;
+    line-height: 25px;
     margin-bottom: 5px;
 }
 
@@ -61,11 +75,17 @@ body{
     display: flex;
     justify-content: center;
     padding: 30px;
+    @media (max-width: 1200px), (orientation:portrait) {
+        display: block;
+    }
 }
 
 #informacoes-monitor{
     max-width: 50%;
     margin: auto;
+    @media (max-width: 1200px), (orientation:portrait) {
+        max-width: 80%;
+    }
 }
 
 #informacoes-monitor h3{
@@ -75,7 +95,7 @@ body{
 }
 
 #informacoes-monitor p{
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
@@ -83,8 +103,18 @@ body{
     color: orange
 }
 
+#imagem-monitor img{
+    @media (max-width: 1200px), (orientation:portrait) {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+}
+
 #ul-contatos{
     list-style: none;
+    @media (max-width: 1200px), (orientation:portrait) {
+        margin-top: 50px;
+    }
 }
 
 .item-contato a button{
@@ -106,7 +136,7 @@ body{
 }
 
 #informacoes-contato{
-    max-width: 30%;
+    max-width: 40%;
     margin: auto 0;
     margin-right: 10px;
 }
@@ -123,4 +153,3 @@ span{
     font-size: 30px;
     margin-bottom: 15px;
 }
-
