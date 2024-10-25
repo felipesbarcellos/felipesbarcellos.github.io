@@ -14,6 +14,11 @@ body{
     background-color: grey;
 }
 
+#sobre-mim h3{
+    padding: 20px 0 10px 0 ;
+    font-size: 16px;
+}
+
 #sobre-mim{
     background-color: rgb(42, 42, 42);
     line-height: 20px;
@@ -73,11 +78,11 @@ body{
 }
 
 #info p{
-    font-size: 18px;
+    font-size: 14px;
     max-width: 80%;
     @media (max-width: 1200px), (orientation:portrait) {
         max-width: 100%;
-        font-size: 16px;
+        font-size: 13px;
     }
 }
 
