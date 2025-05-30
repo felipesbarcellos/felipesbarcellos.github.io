@@ -1,62 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Barcellos</title>
+    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Felipe dos Santos Barcellos - Graduando em Ciência de Dados especializado em Python, RPA, APIs e análise de dados.">
+    <meta name="keywords" content="Felipe Barcellos, Ciência de Dados, Python, JavaScript, Vue.js, Data Science, Automação, RPA">
+    <meta name="author" content="Felipe dos Santos Barcellos">
+    <meta property="og:title" content="Felipe Barcellos - Portfólio">
+    <meta property="og:description" content="Graduando em Ciência de Dados com foco em Inteligência Artificial">
+    <meta property="og:type" content="website">
+    <title>Felipe Barcellos - Portfólio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
-    <div id="main-div">
+    <!-- Navbar Fixa -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <strong>Felipe Barcellos</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tecnologias">Tecnologias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>    <!-- Container Principal -->
+    <div id="main-div" class="container my-5">
         <section id="content">
-            <div id="sobre-mim">
-                <div id="foto-perfil">
-                    <img id="foto" src="./assets/profile.jpg" alt="Foto de perfil">
+            <div id="inicio" class="anchor-section"></div>
+            <div id="sobre-mim" class="row align-items-center perfil-bloco g-0">
+                <div id="foto-perfil" class="col-md-3 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+                    <img id="foto" src="./assets/profile.png" alt="Foto de perfil" class="img-fluid perfil-foto">
                 </div>
-                <div id="info">
-                    <h1>Felipe dos Santos Barcellos</h1>
-                    <h2>Graduando em Ciência de Dados com foco em Inteligência Artificial</h2>
-                    <h3>Minha história de vida</h3>
-                    <p>No início da minha carreira me interessei por administração, porém ao estagiar no Hospital Ernesto Dornelles vi que meus interesses voltavam a se concentrar na área de tecnologia. Ainda no hospital automatizei a aquisição e controle de lista de presenças (acesso ao site e raspagem de dados das solicitações, tratamento de dados para o modelo institucional, automação das respostas de aprovação e reprovação de solicitações) aumentando a eficiência do processo em 15 vezes (de 20 para 300 solicitações por dia) e trabalhei na implementação do software de gestão de fluxos institucionais ministrando treinamentos e mapeando fluxos juntos aos gestores.</p>
-                    <p>Já trabalhei informalmente em alguns projetos utilizando python. Em um desses projetos:- Desenvolvedor principal: Desenvolvi e mantive durante 2 anos automações de cadastro e modificação e healthcheck de produtos, tratamento de centenas de milhares de dados e criação de interfaces gráficas em um site de streaming que era mantido por apenas uma pessoa. A falta de pessoal criava o problema de links fora do ar, desatualizados, dentre outros. Agora o cliente mantém o sistema sozinho com a ajuda da automação.</p>
-                    <p>Mantenho um rotina de estudo e aplicação do conhecimento contínua no meu dia a dia. Gosto de automatizar tarefas e solucionar problemas. Dois exemplos disso são:</p>
-                    <p>1) Criei um software CLI que sorteia um filme da lista de filmes que tenho para assistir com minha namorada. O software pede o gênero e verifica se os filmes foram ou não assistido, depois retorna um filme aleatório que ainda não foi assistidos.</p>
-                    <p>2) Criei um software para monitorar o preço de uma lista de produtos que tenho interesse em comprar, para saber quando o preço está baixo. O software utiliza Selenium para acessar as páginas e raspar o nome, preço, link e a data da raspagem para salvar em um arquivo CSV para consulta utilizando pandas.</p>
+                <div id="info" class="col-md-9 d-flex flex-column justify-content-center perfil-info">                    <h1 class="perfil-nome">Felipe dos Santos Barcellos</h1>
+                    <h2 class="perfil-titulo">Ciência de Dados • Inteligência Artificial • Automação</h2>
+                    <h3 class="perfil-subtitulo">Sobre mim</h3>
+                    <p class="perfil-bio">Sou estudante de Ciência de Dados, apaixonado por tecnologia e automação. Tenho experiência prática em Python, RPA, APIs e análise de dados. Busco sempre aprender e criar soluções inovadoras.</p>
                 </div>
             </div>
-            
-            <div id="contato">
-                <div id="informacoes-contato">
-                    <h3>Meus links:</h3>
-                    <p>Entre em contato pelo LinkedIn ou veja meu perfil em diferentes plataformas.</p>
+            <div id="tecnologias" class="anchor-section"></div>
+            <div class="col-12 mt-3 secao-bloco">
+                <h4 class="secao-titulo mb-2">Tecnologias</h4>
+                <div class="d-flex flex-wrap gap-2 align-items-center justify-content-start tecnologias-lista">
+                    <!-- Linguagens -->
+                    <div class="w-100 mt-2 mb-1"><span class="fw-bold text-secondary">Linguagens</span></div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tecnologia-icone">
+                        <div class="tecnologia-nome">Python</div>
+                    </div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tecnologia-icone">
+                        <div class="tecnologia-nome">JavaScript</div>
+                    </div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" class="tecnologia-icone">
+                        <div class="tecnologia-nome">Java</div>
+                    </div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tecnologia-icone">
+                        <div class="tecnologia-nome">HTML5</div>
+                    </div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="tecnologia-icone">
+                        <div class="tecnologia-nome">CSS3</div>
+                    </div>
+                    <!-- Frameworks/Bibliotecas -->
+                    <div class="w-100 mt-3 mb-1"><span class="fw-bold text-secondary">Frameworks & Bibliotecas</span></div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="tecnologia-icone">
+                        <div class="tecnologia-nome">Vue.js</div>
+                    </div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring" class="tecnologia-icone">
+                        <div class="tecnologia-nome">Spring</div>
+                    </div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="Pandas" class="tecnologia-icone">
+                        <div class="tecnologia-nome">Pandas</div>
+                    </div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg" alt="Flask" class="tecnologia-icone" style="filter: invert(1);">
+                        <div class="tecnologia-nome">Flask</div>
+                    </div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg" alt="SQLAlchemy" class="tecnologia-icone">
+                        <div class="tecnologia-nome">SQLAlchemy</div>
+                    </div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-original.svg" alt="Hibernate" class="tecnologia-icone">
+                        <div class="tecnologia-nome">Hibernate</div>
+                    </div>
+                    <div class="tecnologia-card">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="JPA" class="tecnologia-icone">
+                        <div class="tecnologia-nome">JPA</div>
+                    </div>
+                    <!-- Banco de Dados -->
+                    <div class="w-100 mt-3 mb-1"><span class="fw-bold text-secondary">Banco de Dados</span></div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tecnologia-icone">
+                        <div class="tecnologia-nome">MySQL</div>
+                    </div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="tecnologia-icone">
+                        <div class="tecnologia-nome">PostgreSQL</div>
+                    </div>
+                    <!-- Cloud/DevOps -->
+                    <div class="w-100 mt-3 mb-1"><span class="fw-bold text-secondary">Cloud & DevOps</span></div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" class="tecnologia-icone">
+                        <div class="tecnologia-nome">AWS</div>
+                    </div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="tecnologia-icone">
+                        <div class="tecnologia-nome">Docker</div>
+                    </div>
+                    <!-- Ferramentas/Sistemas -->
+                    <div class="w-100 mt-3 mb-1"><span class="fw-bold text-secondary">Ferramentas & Sistemas</span></div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="tecnologia-icone">
+                        <div class="tecnologia-nome">Git</div>
+                    </div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" class="tecnologia-icone">
+                        <div class="tecnologia-nome">Linux</div>
+                    </div>
+                    <div class="tecnologia-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx" class="tecnologia-icone">
+                        <div class="tecnologia-nome">Nginx</div>
+                    </div>
                 </div>
+            </div>
+            <div class="col-12 secao-bloco" id="contato">
+                <h3 class="secao-titulo mb-2">Contato</h3>
+                <p>Entre em contato pelo LinkedIn ou veja meu perfil em diferentes plataformas.</p>
                 <div id="contatos">
-                    <ul id="ul-contatos">
-                        <li class="item-contato"><a href="https://www.linkedin.com/in/felipesbarcellos/">
-                            <button>LinkedIn</button>
-                        </a></li>
-                        <li class="item-contato"><a href="https://github.com/felipesbarcellos/">
-                            <button>Github</button>
-                        </a></li>
-                        <li class="item-contato"><a href="https://descomplica.worka.love/perfil/felipe-dos-santos-barcellos-8584-d926">
-                            <button>Curriculo do Futuro</button>
-                        </a></li>
+                    <ul id="ul-contatos" class="list-unstyled d-flex flex-wrap gap-3">
+                        <li class="item-contato">
+                            <a href="https://www.linkedin.com/in/felipesbarcellos/" target="_blank">
+                                <button class="btn btn-primary">LinkedIn</button>
+                            </a>
+                        </li>                        <li class="item-contato">
+                            <a href="https://github.com/felipesbarcellos/" target="_blank">
+                                <button class="btn btn-dark">Github</button>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div id="projetos">
-                <div id="monitor-de-precos">
-                    <div id="informacoes-monitor">
-                        <h3>Monitor de preços</h3>
-                        <p>Software desktop com python e pandas para monitorar o preço de uma lista de produtos. Disponível: Pichau, Terabyte, Amazon, MagazineLuiza e Mercado Livre.                    </p>
-                        <a href="https://github.com/felipesbarcellos/verifica_preco_produtos">Link do repositório</a>
-                    </div>
-                    <div id="imagem-monitor">
-                            <img src="assets/arquivos.png" alt="">
+            <div class="col-12 secao-bloco" id="projetos">
+                <h3 class="secao-titulo mb-3">Projetos</h3>
+                <div class="row g-4">                    <div class="col-12 projeto-bloco">
+                        <h4 class="secao-titulo mb-2">MeusFilmes</h4>                        <p>Aplicação web para rastrear filmes assistidos, organizar listas personalizadas e visualizar estatísticas detalhadas dos hábitos cinematográficos. Criado para substituir um sistema manual de controle que causava perda de dados.</p>
+                        <div class="d-flex flex-wrap gap-2 mt-3">
+                            <a href="https://github.com/felipesbarcellos/meus_filmes" class="link-warning" target="_blank">Link do repositório</a>
+                            <span class="text-muted">|</span>
+                            <a href="https://meusfilmes.loophole.site/" target="_blank" class="link-warning">Acessar página da web</a>
+                        </div>
+                    </div><div class="col-12 projeto-bloco">
+                        <h4 class="secao-titulo mb-2">Monitor de preços</h4>
+                        <p>Software desktop com python e pandas para monitorar o preço de uma lista de produtos. Disponível: Pichau, Terabyte, Amazon, MagazineLuiza e Mercado Livre.</p>
+                        <a href="https://github.com/felipesbarcellos/verifica_preco_produtos" class="link-warning" target="_blank">Link do repositório</a>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer-custom py-4 mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <p class="footer-text mb-2">
+                        <strong>Felipe dos Santos Barcellos</strong>
+                    </p>
+                    <p class="footer-subtitle mb-3">
+                        Ciência de Dados • Inteligência Artificial • Automação
+                    </p>
+                    <div class="footer-links mb-3">
+                        <a href="https://www.linkedin.com/in/felipesbarcellos/" target="_blank" class="footer-link">
+                            LinkedIn
+                        </a>
+                        <span class="footer-separator">•</span>
+                        <a href="https://github.com/felipesbarcellos/" target="_blank" class="footer-link">
+                            GitHub
+                        </a>
+                    </div>                    <p class="footer-copyright">
+                        © 2025 Felipe Barcellos
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Scroll to Top -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Voltar ao topo">
+        ▲
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for navbar links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navbarHeight = document.querySelector('.navbar-custom').offsetHeight;
+                    const targetPosition = target.offsetTop - navbarHeight - 20;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Active navigation state
+        window.addEventListener('scroll', () => {
+            const sections = ['inicio', 'tecnologias', 'projetos', 'contato'];
+            const navbarHeight = document.querySelector('.navbar-custom').offsetHeight;
+            const scrollPos = window.scrollY + navbarHeight + 50;
+
+            sections.forEach(section => {
+                const element = document.getElementById(section);
+                const navLink = document.querySelector(`a[href="#${section}"]`);
+                
+                if (element && navLink) {
+                    const offsetTop = element.offsetTop;
+                    const offsetBottom = offsetTop + element.offsetHeight;
+                    
+                    if (scrollPos >= offsetTop && scrollPos < offsetBottom) {
+                        document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+                        navLink.classList.add('active');
+                    }
+                }
+            });
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    bootstrap.Collapse.getInstance(navbarCollapse).hide();
+                }
+            });
+        });
+
+        // Scroll to top functionality
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    <script src="app.js"></script>
 </body>
 </html>
