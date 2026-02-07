@@ -136,11 +136,22 @@
             <div class="col-12 secao-bloco" id="projetos">
                 <h3 class="secao-titulo mb-3">Projetos</h3>
                 <div class="row g-4">                    <div class="col-12 projeto-bloco">
-                        <h4 class="secao-titulo mb-2">MeusFilmes</h4>                        <p>Aplicação web para rastrear filmes assistidos, organizar listas personalizadas e visualizar estatísticas detalhadas dos hábitos cinematográficos. Criado para substituir um sistema manual de controle que causava perda de dados.</p>
+                        <h4 class="secao-titulo mb-2">MeusFilmes</h4>
+                        <p>Plataforma full stack para gerenciamento de filmes, com autenticação JWT (registro, login e recuperação de senha), listas personalizadas, rastreamento de filmes assistidos e integração com a API do TMDB via proxy seguro. O frontend foi construído com Vue 3 (Composition API), Pinia e Vue Router, enquanto o backend utiliza Flask com arquitetura modular (Blueprints) e documentação interativa via Swagger UI. O projeto é containerizado com Docker Compose e foi deployado na AWS com domínio próprio.</p>
+                        <div class="d-flex flex-wrap gap-2 mt-2 projeto-tags">
+                            <span class="badge bg-secondary">Vue 3</span>
+                            <span class="badge bg-secondary">Flask</span>
+                            <span class="badge bg-secondary">Docker</span>
+                            <span class="badge bg-secondary">AWS</span>
+                            <span class="badge bg-secondary">JWT</span>
+                            <span class="badge bg-secondary">Swagger</span>
+                            <span class="badge bg-secondary">Pinia</span>
+                            <span class="badge bg-secondary">SQLAlchemy</span>
+                            <span class="badge bg-secondary">Nginx</span>
+                            <span class="badge bg-secondary">Gunicorn</span>
+                        </div>
                         <div class="d-flex flex-wrap gap-2 mt-3">
                             <a href="https://github.com/felipesbarcellos/meus_filmes" class="link-warning" target="_blank">Link do repositório</a>
-                            <span class="text-muted">|</span>
-                            <a href="http://meusfilmes.shop/" target="_blank" class="link-warning">Acessar página da web</a>
                         </div>
                     </div><div class="col-12 projeto-bloco">
                         <h4 class="secao-titulo mb-2">Monitor de preços</h4>
@@ -252,6 +263,5 @@
             });
         });
     </script>
-    <script src="app.js"></script>
 </body>
 </html>

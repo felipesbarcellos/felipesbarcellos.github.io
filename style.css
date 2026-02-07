@@ -384,6 +384,17 @@ body {
 
 }
 
+/* ===== BADGES DE TECNOLOGIA DOS PROJETOS ===== */
+.projeto-tags .badge {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--cor-text-secondary);
+    font-weight: 500;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+    letter-spacing: 0.3px;
+}
+
 /* ===== UTILITÁRIOS DE TEXTO ===== */
 .secao-bloco h3, 
 .secao-bloco h4, 
