@@ -365,33 +365,24 @@ body {
     border-left: 4px solid var(--cor-primaria);
     background: linear-gradient(135deg, var(--cor-background) 0%, rgba(255,255,255,0.08) 100%);
     position: relative;
-    margin-top: 1.5rem;
+    margin-top: var(--spacing-lg);
 }
 
 .projeto-bloco:first-child::before {
     content: '⭐ PROJETO PRINCIPAL';
     position: absolute;
     top: -12px;
-    left: var(--spacing-md);
     background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
     color: var(--cor-dark);
-    padding: 0.25rem 0.75rem;
     border-radius: var(--border-radius-sm);
-    font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: 0.5px;
     box-shadow: var(--shadow-sm);
-}
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+    left: var(--spacing-sm);
 
-.projeto-bloco:first-child::before {
-        font-size: 0.65rem;
-        padding: 0.2rem 0.5rem;
-        left: var(--spacing-sm);
-    }
-    
-    .projeto-bloco:first-child {
-        margin-top: var(--spacing-lg);
-    }
+}
 
 /* ===== UTILITÁRIOS DE TEXTO ===== */
 .secao-bloco h3, 
